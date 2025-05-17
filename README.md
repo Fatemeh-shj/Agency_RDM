@@ -1,28 +1,58 @@
-# Agency_RDM
-Hypnosis and Sense of Agency: Code, Data, and Materials for Experimental Task and Analysis
+# Action Choice and Agency Judgment – Project Repository
 
-# The Impact of Action Choice on Simultaneity and Causality Judgments :Comparing Free Choice, Direct Order, and Posthypnotic Suggestion
+This repository contains all materials related to the project titled:  
+**"The impact of action choice on simultaneity and causality judgments: comparing free choice, direct order, and posthypnotic suggestion"**
 
-This repository contains materials related to a behavioral experiment investigating how different modes of action selection (free choice, direct order, and posthypnotic suggestion) affect judgments of simultaneity and causality.
+---
 
-## 📁 Contents
+## 📁 Repository Structure
 
-- `task_code/` – Psychtoolbox code for the experimental task
-- `data/` – Logged behavioral data from all participants
-- `analysis/` – Statistical analysis scripts ( matlab & R)
-- `Hypnosis_Script.docx` – English translation of the hypnosis induction used during the experiment
+### `AgencyRDM/`
+Contains MATLAB code used to run the experimental task using Psychtoolbox.
 
-## 🎯 Purpose
+- `myfunc/`: Custom MATLAB functions used within the task
+- `images/`: Instruction and message screens (in Persian) used in the task as images
+- `mydata/`: Automatically stored participant data during the task
+- `meandata/`: Files that store mean reaction times for each participant
+- `main3cond.m`: Full task script (12 blocks × 24 trials = 288 trials)
+- `train2cond.m`: Training task script (2 blocks × 24 trials = 48 trials; only Free/Force conditions)
 
-This repository is intended to support:
-- Reproducibility of the results presented in the related publication
-- Transparency in experimental procedure and data analysis
-- Reuse of materials for future research on hypnosis, agency, and causal perception
+### `dataset/`
+Separate folder containing the cleaned or raw datasets used for analysis. May include CSV, MAT, or processed versions.
 
-## 📄 Citation
+### `R_analysis/`
+Contains statistical analysis scripts written in R for post-experiment analysis.
 
-> If you use or refer to any of the materials in this repository, please cite the associated publication (link to be added after acceptance).
+### `Hypnosis_Script_Translated.docx`
+The English translation of the hypnosis induction script used during the experiment (outside of `AgencyRDM/`).
 
-## 🔒 License
+---
 
-This repository is made publicly available for academic and research purposes. Please contact the author if you wish to use any part of it for commercial or non-research applications.
+## ▶️ How to Run the Experiment
+
+1. Open MATLAB.
+2. Navigate to `AgencyRDM/`.
+3. Run `train2cond.m` for the training phase, or `main3cond.m` for the full experiment.
+4. Data will be saved to `mydata/`.
+
+---
+
+## 📋 Requirements
+
+- MATLAB R2021a or later
+- Psychtoolbox 3.x
+- R (optional, for statistical analysis)
+
+---
+
+## 🧠 Citation
+
+> A full citation will be added once the related manuscript is published.
+
+---
+
+## 📎 Notes
+
+- All participant-facing Persian text is shown using images due to MATLAB’s limited RTL support.
+- Folder structure may grow as the project develops.
+

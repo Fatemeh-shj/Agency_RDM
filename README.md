@@ -18,12 +18,12 @@ Contains MATLAB code used to run the experimental task using Psychtoolbox.
 - `train2cond.m`: Training task script (2 blocks × 24 trials = 48 trials; only Free/Force conditions)
 
 ### `dataset/`
-Separate folder containing the cleaned or raw datasets used for analysis. May include CSV, MAT, or processed versions.
+Separate folder containing the raw datasets used for analysis.
 
-### `R_analysis/`
+### `Rplotting/`
 Contains statistical analysis scripts written in R for post-experiment analysis.
 
-### `Hypnosis_Script_Translated.docx`
+### `Hypnosis_Script.docx`
 The English translation of the hypnosis induction script used during the experiment (outside of `AgencyRDM/`).
 
 ---
@@ -39,7 +39,7 @@ The English translation of the hypnosis induction script used during the experim
 
 ## 📋 Requirements
 
-- MATLAB R2021a or later
+- MATLAB
 - Psychtoolbox 3.x
 - R (optional, for statistical analysis)
 

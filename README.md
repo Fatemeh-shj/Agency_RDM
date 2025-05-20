@@ -53,6 +53,5 @@ The English translation of the hypnosis induction script used during the experim
 
 ## 📎 Notes
 
-- All participant-facing Persian text is shown using images due to MATLAB’s limited RTL support.
 - Folder structure may grow as the project develops.
 
